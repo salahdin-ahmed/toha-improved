@@ -1,15 +1,16 @@
 {{/* check if there is any hero image in the same folder as the markdown file */}}
 {{ $heroImage := .Page.Resources.GetMatch "hero.{jpg,png,svg}"}}
-
-{{/*  if hero image is specified in the page front-matter, then use that  */}}
-{{ if .Params.hero }}
-  {{ $heroImage = .Page.Resources.GetMatch .Params.hero }}
-{{ end }}
 {{ .Scratch.Set "heroScratch" $heroImage }}
 
 {{/* if hero image is not provided, then use the default hero image */}}
 {{ if not $heroImage }}
-  {{ $heroImage := resources.Get "images/default-hero.jpg"}}
+  {{ $heroImage := resources.Get "/images/posts/default-hero.png" }}
+  {{ .Scratch.Set "heroScratch" $heroImage }}
+{{ end }}
+
+{{/* if hero is provides in assetDir, then use that */}}
+{{ if .Params.hero }}
+  {{ $heroImage := resources.Get .Params.hero }}
   {{ .Scratch.Set "heroScratch" $heroImage }}
 {{ end }}
 
@@ -21,4 +22,4 @@
 {{ end }}
 
 {{/*  return the hero image  */}}
-{{ return $heroImage.RelPermalink }}
+{{ return  $heroImage.RelPermalink }}

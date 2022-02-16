@@ -8,6 +8,12 @@ other = "記事"
 [toc_heading]
 other = "目次"
 
+[tags]
+other = "タグ"
+
+[categories]
+other = "カテゴリ"
+
 [resume]
 other = "職務経歴書"
 
@@ -43,6 +49,9 @@ other = "前"
 
 [next]
 other = "次"
+
+# [share_on]
+# other = "Share on"
 
 [improve_this_page]
 other = "編集リクエストを送る"
@@ -109,3 +118,6 @@ other = "ノート"
 
 [disclaimer_text]
 other = "責任通知"
+
+[search]
+other = "検索"

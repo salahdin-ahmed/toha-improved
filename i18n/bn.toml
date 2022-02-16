@@ -8,6 +8,12 @@ other = "পোষ্ট সমূহ"
 [toc_heading]
 other = "সুচিপত্র"
 
+[tags]
+other = "ট্যাগ সমুহ"
+
+[categories]
+other = "বিভাগ সমুহ"
+
 [resume]
 other = "আমার জীবনবৃত্তান্ত"
 
@@ -43,6 +49,9 @@ other = "পূর্ববর্তী"
 
 [next]
 other = "পরবর্তী"
+
+[share_on]
+other = "শেয়ার করুন"
 
 [improve_this_page]
 other = "এই পৃষ্ঠাটি উন্নত করুন"
@@ -109,3 +118,6 @@ other = "নোট সমূহ"
 
 [disclaimer_text]
 other = "দায় বিজ্ঞপ্তি"
+
+[search]
+other = "অনুসন্ধান করুন"

@@ -8,6 +8,12 @@ other = "文章"
 [toc_heading]
 other = "目錄"
 
+[tags]
+other = "标签"
+
+[categories]
+other = "类别"
+
 [at]
 other = "at"
 
@@ -46,6 +52,9 @@ other = "上一篇"
 
 [next]
 other = "下一篇"
+
+[share_on]
+other = "分享"
 
 [improve_this_page]
 other = "改善此頁面"
@@ -112,3 +121,6 @@ other = "筆記"
 
 [disclaimer_text]
 other = "免責聲明"
+
+[search]
+other = "搜索"

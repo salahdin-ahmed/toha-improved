@@ -12,7 +12,8 @@
       </div>
       <div class="card-footer">
         <span class="float-left">{{ .Date.Format "January 2, 2006" }}</span>
-        <a href="{{ .RelPermalink }}" title="{{ i18n "read" }}" class="float-right btn btn-outline-info btn-sm">{{ i18n "read" }}</a>
+        <!-- <a href="{{ .RelPermalink }}" title="{{ i18n "read" }}" class="float-right btn btn-outline-info btn-sm">{{ i18n "read" }}</a> -->
+        <a href="{{ .RelPermalink }}" title="{{ i18n "read" }}" class="float-right btn btn-outline-info btn-sm">{{.ReadingTime}} minutes</a>
       </div>
     </div>
   </a>

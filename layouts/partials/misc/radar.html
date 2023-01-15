@@ -8,10 +8,27 @@ new Chart(ctx, {
     type: 'radar',
     data: {
         labels: ['Honesty', 'Emotionality', 'Extraversion', 'Agreeableness', 'Conscientiousness', 'Openness'],
-        datasets: [{
-            label: 'HEXACO Personality',
-            data: [3.81, 2.75, 1.69, 3.13, 4.06, 4.00],
-        }]
+        datasets: [
+            {
+                label: 'Me',
+                data: [3.81, 2.75, 1.69, 3.13, 4.06, 4.00],
+            },
+            // {
+            //     label: 'Median',
+            //     data: [3.22, 3.34, 3.50, 3.00, 3.47, 3.31],
+            //     fill: false,
+            // },
+            // {
+            //     label: '10th percentile',
+            //     data: [2.41, 2.63, 2.72, 2.22, 2.72, 2.50],
+            //     fill: false,
+            // },
+            // {
+            //     label: '90th percentile',
+            //     data: [3.97, 3.97, 4.22, 3.72, 4.16, 4.13],
+            //     fill: false,
+            // },
+        ]
     },
     options: {
         maintainAspectRatio: false,
@@ -28,6 +45,11 @@ new Chart(ctx, {
             legend: {
                 display: false,
             },
+            title: {
+                display: true,
+                position: 'bottom',
+                text: 'HEXACO Personality'
+            }
         },
     }
 });
